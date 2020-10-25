@@ -1,6 +1,6 @@
 <h4>Tambah Data</h4>
 <hr>
-<form action="index.php?mod=dokter&page=save" method="POST">
+<form action="index.php?mod=pegawai&page=save" method="POST">
     <div class="col-md-6">
         <div class="form-group">
             <label for="">ID</label>

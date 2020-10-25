@@ -7,12 +7,14 @@ if($con ->auten()){
         case 'pegawai':
             include_once 'controller/pegawai.php';
         break;
-        default:
-        include_once 'controller/pegawai.php';
+        case 'customer':
+            include_once 'controller/customer.php';
+            break;
+        default;
+        include_once 'controller/home.php';
         //include_once 'controller/login.php';
     }
 }else{
    include_once 'controller/login.php';
-
 }
 ?>

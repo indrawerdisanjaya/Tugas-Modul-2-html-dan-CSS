@@ -60,7 +60,6 @@ switch (@$_GET['page']){
         $pegawai=$conn->query($pegawai);
         $_POST=$pegawai->fetch_assoc();
         $_POST['kode_pegawai']=md5($_POST['kode_pegawai']);
-        //var_dump($dokter);
         $sql="SELECT * FROM kategori_pegawai ";
         $kategoripeg=$conn->query($sql);
         $content = "views/pegawai/tambah.php";

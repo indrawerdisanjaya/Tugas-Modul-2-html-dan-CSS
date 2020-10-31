@@ -1,11 +1,12 @@
 <h4>Tambah Data</h4>
 <hr>
-<form action="index.php?mod=pegawai&page=save" method="POST">
+<form action="index.php?mod=pegawai&page=save" method="POST" enctype="multipart/form-data">
     <div class="col-md-6">
         <div class="form-group">
             <label for="">ID</label>
             <input type="text" name="id_pegawai" required value="<?=(isset($_POST['id_pegawai']))?$_POST['id_pegawai']:'';?>" class="form-control">
             <input type="hidden" name="kode_pegawai" value="<?=(isset($_POST['kode_pegawai']))?$_POST['kode_pegawai']:'';?>" class="form-control">
+            <input type="hidden" name="photo_old" value="<?=(isset($_POST['photo']))?$_POST['photo']:'';?>">
             <span class="text-danger"><?=(isset($err['id_pegawai']))?$err['id_pegawai']:'';?></span>
         </div>
         <div class="form-group">
@@ -42,6 +43,12 @@
                 }?>
             </select>
             <span class="text-danger"><?=(isset($err['id_kategori_pegawai']))?$err['id_kategori_pegawai']:'';?></span>  
+        </div>
+        <div class="form-group">
+        <label for="">Photo</label>
+        <img src="../media/<?=$_POST['photo']?>"width="100">
+        <input type="file" name="fileToUpload" class="form-control">
+        <span class="text-danger"><?=(isset($err['fileToUpload']))?$err['fileToUpload']:'';?></span>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Save</button>

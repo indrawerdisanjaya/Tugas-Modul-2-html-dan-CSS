@@ -12,7 +12,7 @@ switch (@$_GET['page']){
     case 'save':
         if($_SERVER['REQUEST_METHOD']=="POST"){
             if(empty($_POST['id_customer'])){
-                $err['id_customer']="ID Pegawai Wajib";
+                $err['id_customer']="ID Customer Wajib";
             }
             if(empty($_POST['nama'])){
                 $err['nama']="Nama Wajib Terisi";

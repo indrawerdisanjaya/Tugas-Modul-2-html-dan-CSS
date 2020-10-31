@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Sistem Informasi POSCom</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/style.css">
@@ -23,7 +23,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                           </button>
-                    <a class="navbar-brand" href="#">Sistem Informasi Kasir Swasthi Computer</a>
+                    <a class="navbar-brand" href="#">Sistem Informasi Point Of Sale & Service Swasthi Computer</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     
@@ -37,11 +37,13 @@
               <ul class="list-group col-md-3 col-xs-2">
                 <li class="list-group-item "><a href="index.php?mod=pegawai"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Pegawai</span></a></li>
                 <li class="list-group-item "><a href="index.php?mod=customer"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Customer</span></a></li>
+                <li class="list-group-item "><a href="index.php?mod=barang"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Barang</span></a></li>
+                <li class="list-group-item "><a href="index.php?mod=pembelian"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Pembelian</span></a></li>
+                <li class="list-group-item "><a href="index.php?mod=penjualan"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Penjualan</span></a></li>
                 </ul>
             <div class="col-md-9 col-xs-10">
                 <?php include_once $content; ?>
-            </div>
-            
+            </div> 
         </div>
 
     </div>

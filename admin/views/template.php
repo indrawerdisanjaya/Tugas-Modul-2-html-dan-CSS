@@ -35,6 +35,7 @@
         </nav>
         <div class="content" >
               <ul class="list-group col-md-3 col-xs-2">
+              <li class="list-group-item "><a href="index.php?mod=home"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Home</span></a></li>
                 <li class="list-group-item "><a href="index.php?mod=pegawai"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Pegawai</span></a></li>
                 <li class="list-group-item "><a href="index.php?mod=customer"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Customer</span></a></li>
                 <li class="list-group-item "><a href="index.php?mod=barang"> <i class="fa fa-address-card "></i> <span class="hidden-xs">Data Barang</span></a></li>

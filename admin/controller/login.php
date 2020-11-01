@@ -9,7 +9,7 @@ if(isset($_POST['email'])){
         $sess=$user ->fetch_array();
         $_SESSION['login']['email']=$sess['email'];
         $_SESSION['login']['id']=$sess['id'];
-        header('Location: http://localhost/SIKAS/admin/index.php?mod=pegawai');
+        header('Location: http://localhost/SIKAS/admin/index.php?mod=home');
     }else{
         $msg="Email dan Password salah";
         include_once 'views/v_login.php';
